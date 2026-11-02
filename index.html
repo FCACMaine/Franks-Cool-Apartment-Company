@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franks Cool Apartments Company | Houlton, Maine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; color: #333; line-height: 1.6; background: #f8fafc; }
+    header { background: linear-gradient(135deg, #0d47a1, #00897b); color: white; padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    nav { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.6rem; font-weight: 700; letter-spacing: 1px; }
+    .logo span { color: #80deea; }
+    nav ul { display: flex; list-style: none; gap: 2rem; }
+    nav a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+    nav a:hover { color: #80deea; }
+    .hero { background: linear-gradient(rgba(13,71,161,0.7), rgba(0,137,123,0.7)), url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat; color: white; text-align: center; padding: 120px 20px; }
+    .hero h1 { font-size: 3.2rem; margin-bottom: 1rem; font-weight: 700; }
+    .hero p { font-size: 1.3rem; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+    .btn { display: inline-block; background: #00897b; color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
+    .btn:hover { background: #00695c; transform: translateY(-2px); }
+    section { padding: 80px 0; }
+    h2 { text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: #0d47a1; }
+    .subtitle { text-align: center; color: #666; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .about-text p { margin-bottom: 1rem; }
+    .apartments { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .apartment-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: transform 0.3s; }
+    .apartment-card:hover { transform: translateY(-10px); }
+    .apartment-card img { width: 100%; height: 220px; object-fit: cover; }
+    .apartment-info { padding: 20px; }
+    .apartment-info h3 { color: #0d47a1; margin-bottom: 0.5rem; }
+    .price { font-size: 1.4rem; color: #00897b; font-weight: 700; margin: 10px 0; }
+    .amenities { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center; }
+    .amenity { background: white; padding: 30px 20px; border-radius: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.05); }
+    .amenity i { font-size: 2.5rem; color: #00897b; margin-bottom: 10px; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .contact-info p { margin: 10px 0; font-size: 1.1rem; }
+    .contact-info strong { color: #0d47a1; }
+    iframe { width: 100%; height: 350px; border: 0; border-radius: 12px; }
+    footer { background: #0d47a1; color: white; text-align: center; padding: 30px 20px; }
+    @media (max-width: 768px) {
+      .about-content, .contact-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.2rem; }
+      nav ul { gap: 1rem; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">FRANKS <span>COOL</span> APARTMENTS</div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#apartments">Apartments</a></li>
+          <li><a href="#amenities">Amenities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Cool Living in Houlton, Maine</h1>
+      <p>Comfortable, well-maintained apartments in a quiet residential neighborhood. Experience the best of small-town Maine living with Franks Cool Apartments Company.</p>
+      <a href="#contact" class="btn">Contact Us Today</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p class="subtitle">Locally owned and operated in the heart of Houlton</p>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Welcome to <strong>Franks Cool Apartments Company</strong>, your home for comfortable and affordable living at <strong>57 North Street</strong> in Houlton, Maine.</p>
+          <p>We take pride in providing clean, well-kept apartments in a convenient location close to downtown Houlton, local shops, and community services. Whether you’re looking for a cozy studio or a spacious multi-bedroom unit, we focus on creating a place you’ll be proud to call home.</p>
+          <p>Our goal is simple: offer cool, comfortable apartments with responsive local management.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" alt="Apartment interior" style="width:100%; border-radius:12px; box-shadow:0 5px 20px rgba(0,0,0,0.1);">
+      </div>
+    </div>
+  </section>
+
+  <section id="apartments" style="background:#f1f5f9;">
+    <div class="container">
+      <h2>Available Apartments</h2>
+      <p class="subtitle">Spacious, comfortable units ready for you (contact us for current availability and pricing)</p>
+      <div class="apartments">
+        <div class="apartment-card">
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="Studio Apartment">
+          <div class="apartment-info">
+            <h3>Studio Apartment</h3>
+            <p>Cozy and efficient living space perfect for one person.</p>
+            <div class="price">From $750/mo</div>
+            <p>Approx. 450–550 sq ft</p>
+          </div>
+        </div>
+        <div class="apartment-card">
+          <img src="https://images.unsplash.com/photo-1560448204-603b3fc33ddc?auto=format&fit=crop&w=800&q=80" alt="1 Bedroom">
+          <div class="apartment-info">
+            <h3>1-Bedroom Apartment</h3>
+            <p>Comfortable layout with separate living and sleeping areas.</p>
+            <div class="price">From $875/mo</div>
+            <p>Approx. 650–750 sq ft</p>
+          </div>
+        </div>
+        <div class="apartment-card">
+          <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80" alt="2 Bedroom">
+          <div class="apartment-info">
+            <h3>2-Bedroom Apartment</h3>
+            <p>Spacious option ideal for couples or small families.</p>
+            <div class="price">From $1,050/mo</div>
+            <p>Approx. 850–950 sq ft</p>
+          </div>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:30px; color:#666;">*Prices are examples based on local Houlton market rates. Call for exact current availability and rates.</p>
+    </div>
+  </section>
+
+  <section id="amenities">
+    <div class="container">
+      <h2>Amenities & Features</h2>
+      <p class="subtitle">Everything you need for comfortable living</p>
+      <div class="amenities">
+        <div class="amenity">
+          <div style="font-size:2.5rem; color:#00897b; margin-bottom:10px;">🅿️</div>
+          <h3>Off-Street Parking</h3>
+          <p>Convenient parking available</p>
+        </div>
+        <div class="amenity">
+          <div style="font-size:2.5rem; color:#00897b; margin-bottom:10px;">🔥</div>
+          <h3>Heat Included</h3>
+          <p>Stay warm in Maine winters</p>
+        </div>
+        <div class="amenity">
+          <div style="font-size:2.5rem; color:#00897b; margin-bottom:10px;">🧺</div>
+          <h3>Laundry Access</h3>
+          <p>On-site laundry facilities</p>
+        </div>
+        <div class="amenity">
+          <div style="font-size:2.5rem; color:#00897b; margin-bottom:10px;">📍</div>
+          <h3>Great Location</h3>
+          <p>Quiet street near downtown Houlton</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="background:#f1f5f9;">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p class="subtitle">We’d love to show you around</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Franks Cool Apartments Company</strong></p>
+          <p>📍 57 North Street<br>Houlton, Maine 04730</p>
+          <p>📞 Phone: <a href="tel:207-254-7602" style="color:#00897b; font-weight:600;">207-254-7602</a></p>
+          <p>✉️ Email: info@frankscoolapartments.com</p>
+          <p style="margin-top:20px;">Call or text anytime to check availability, schedule a viewing, or ask questions. We’re local and responsive!</p>
+        </div>
+        <div>
+          <iframe src="https://maps.google.com/maps?q=57+North+Street,+Houlton,+ME+04730&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Franks Cool Apartments Company. All rights reserved.<br>57 North Street, Houlton, Maine 04730 | 207-254-7602</p>
+    </div>
+  </footer>
+</body>
+</html>
