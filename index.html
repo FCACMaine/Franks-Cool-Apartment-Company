@@ -190,5 +190,21 @@
       <p>&copy; 2026 Franks Cool Apartments Company. All rights reserved.<br>57 North Street, Houlton, Maine 04730 | 207-254-7602</p>
     </div>
   </footer>
+  <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('nav ul');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+
+  // Close menu when a link is clicked (nice on mobile)
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('show');
+    });
+  });
+</script>
 </body>
+  
 </html>
